@@ -1,4 +1,5 @@
 const seedrandom = require("seedrandom");
+const alphabet = require("./alphabet");
 
 class Neuron {
     constructor(weight) {
@@ -72,4 +73,4 @@ function getRandomVector(size, rng, max = 1) {
 }
 
 const neuron = new Neuron(getRandomVector(2, seedrandom()));
-Trainer.trainingLoop(neuron, 1000);
+Trainer.trainingLoop(neuron, 2);
